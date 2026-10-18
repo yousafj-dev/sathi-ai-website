@@ -922,7 +922,7 @@
             if (!v) for (k = 0; k < voices.length; k++) { if (vlang(voices[k]).indexOf('en') === 0 && vname(voices[k]).indexOf('google') >= 0) { v = voices[k]; break; } }
             if (!v) for (k = 0; k < voices.length; k++) { if (vlang(voices[k]).indexOf('hi') === 0) { v = voices[k]; break; } }
             if (v) u.voice = v;
-            u.rate = 0.95; u.pitch = 1.0;
+            u.rate = 1.0; u.pitch = 1.0;
           } catch (e) {}
           u.onend = function () { button.classList.remove('playing'); button.textContent = '\u25b7 Sunno'; };
           u.onerror = function () { button.classList.remove('playing'); button.textContent = '\u25b7 Sunno'; };
